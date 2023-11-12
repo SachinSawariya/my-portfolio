@@ -1,0 +1,82 @@
+.services{
+    display: flex;
+    height: 77vh;
+    padding: 2rem 3rem 0 3rem;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+}
+.s-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex:0.4;
+}
+.s-left span{
+    color: var(--black);
+    font-size: 40px;
+    font-weight: bold;
+}
+.s-btn{
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+}
+/* .cards{
+    position: relative;
+} */
+.cards *{
+    position: relative;
+}
+
+.blur{
+    position: absolute;
+    width: 32rem;
+    height: 28rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(62px);
+}
+.s-blur{
+    top: 82rem;
+    left: 34rem;
+}
+
+@media screen and (max-width: 480px){
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 95rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 15.5rem;
+    }
+    .cards *{
+        position: static;
+    }
+}
+
+
+@media screen and (max-width: 850px){
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 95rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 15.5rem;
+    }
+    .cards *{
+        position: static;
+    }
+}

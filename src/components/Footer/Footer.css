@@ -1,0 +1,170 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    margin-top: -5rem;
+}
+
+.f-content {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    width: 82%;
+    color: black;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    /* margin-left: 10rem; */
+}
+
+/* .c-icon { */
+    /* display: flex;
+    flex-direction: column; */
+    /* margin-left: 2rem; */
+    /* justify-content: center; */
+    /* margin-bottom: 1rem; */
+/* } */
+
+.c-icon h2 {
+    font-size: xx-large !important;
+    align-items: center;
+    text-align: center;
+}
+
+/* .f-contact { */
+    /* margin-top: 4rem;
+    margin-bottom: -6rem; */
+    /* flex-direction: column; */
+
+    /* margin-top: 4rem; */
+/* } */
+
+.f-contact h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.f-contact span {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.f-icon {
+    display: flex;
+    gap: 1rem;
+    /* margin-left: 22rem; */
+    /* align-items: center !important;
+    justify-content: center !important; */
+}
+
+.copyright span {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    margin-top: 20px; /* Adjust this value to control the spacing between the content and copyright notice */
+    font-size: 20px;
+    color: black; /* Change the color as needed */
+}
+
+@media screen and (max-width: 480px) {
+    .f-content {
+        flex-direction: column;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    .f-content p {
+        width: auto;
+        padding: 0;
+    }
+
+    .f-contact h1 {
+        font-size: 22px;
+    }
+
+    .f-contact span {
+        font-size: 16px;
+        margin-top: -2px;
+    }
+    .f-icon{
+        justify-content: center;
+    }
+
+    .f-icon a {
+        font-size: 5px; /* Adjust the size as needed for smaller screens */
+        /* margin: 0 5px; Adjust the spacing between icons as needed */
+        margin-top:-12px;
+    }
+
+    .copyright{
+        /* margin-top: 5px; */
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        margin-top: -1px;
+
+    }
+    .c-icon h2{
+        font-size: 22px;
+        margin-top: 2px;
+    }
+    .copyright span{
+        margin-top: -2px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .f-content {
+        flex-direction: column;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    .f-content p {
+        width: auto;
+        padding: 0;
+    }
+
+    .f-contact h1 {
+        font-size: 22px;
+    }
+
+    .f-contact span {
+        font-size: 16px;
+        margin-top: -2px;
+    }
+    .f-icon{
+        justify-content: center;
+    }
+
+    .f-icon a {
+        font-size: 5px; /* Adjust the size as needed for smaller screens */
+        /* margin: 0 5px; Adjust the spacing between icons as needed */
+        margin-top:-12px;
+    }
+
+    .copyright{
+        /* margin-top: 5px; */
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        margin-top: -1px;
+
+    }
+    .c-icon h2{
+        font-size: 22px;
+        margin-top: 2px;
+    }
+    .copyright span{
+        margin-top: -2px;
+    }
+
+}

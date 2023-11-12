@@ -1,0 +1,72 @@
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+}
+.c-left{
+    flex-basis: 20%;
+}
+.c-left p{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:brown;
+}
+.c-left img{
+    max-width: 70%;
+    object-fit: cover;
+    box-shadow: -9px 10px #de0c0c, 9px -10px #ff1111 ;
+    transform: rotate(-2deg) scaleX(-1);
+    margin-left: 6rem;
+}
+.c-right{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    flex-basis: 60%;
+}
+.c-right form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.c-right textarea{
+    height: 5rem !important;
+}
+
+@media screen and (max-width: 480px){
+    .contact-form{
+        flex-direction: column;
+        height: 45rem;
+    }
+    .c-left img{
+        margin-left: 2rem;
+    }
+    .c-right *{
+        transform: scale(0.9);
+    }
+}
+@media screen and (max-width: 850px){
+    .contact-form{
+        flex-direction: column;
+        height: 45rem;
+    }
+    .c-left img{
+        margin-left: 2rem;
+    }
+    .c-right *{
+        transform: scale(0.9);
+    }
+}
