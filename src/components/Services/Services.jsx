@@ -35,13 +35,14 @@ function Services() {
             detail={"Html, CSS, JavaScript, Bootstrap, React"}
           />
         </div>
+        
 
         {/* third card */}
         <div style={{ left: '26rem', top: '12rem' }}>
           <Card 
             emoji={Glasses}
             heading={"Back-End Technologies"}
-            detail={"Node JS, JSP"}
+            detail={"Node JS, Express"}
           />
         </div>
         {/* fourth card */}
@@ -49,7 +50,7 @@ function Services() {
           <Card 
             emoji={Glasses}
             heading={"Programming Language"}
-            detail={"C, C++, Java, Python"}
+            detail={"C, C++, Python"}
           />
         </div>
 

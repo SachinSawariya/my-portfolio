@@ -4,6 +4,8 @@
     justify-content: center;
     flex-direction: column;
     height: 50vh;
+    padding: 0.1rem 5rem;
+
     
 }
 .portfolio span{

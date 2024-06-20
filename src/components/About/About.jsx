@@ -5,26 +5,52 @@ import my_pic from './About_pic.jpeg';
 function About() {
   return (
     <div className="about" id='About'>
-        <div className="a-left">
-            <div className="a-image">
-                <img src={my_pic} style={{width:'21rem', height:'28rem' }} />
-            </div>
+      <div className="a-left">
+        <div className="a-image">
+          <img src={my_pic} alt='' style={{ width: '21rem', height: '28rem' }} />
         </div>
+      </div>
 
-        <div className="a-right">
+      <div className="a-right">
         <h1 class="sub-title"> About Me.</h1>
-          <p>Greetings! Welcome to my portfolio. I am delighted to present to you a comprehensive overview of my
-            professional journey, accomplishments, and aspirations. My name is <span>Sachin Kumar </span>, and I am a
-            highly motivated and passionate individual dedicated to Computer Science. Throughout my career, I have honed
-            my skills, gained invaluable experiences, and consistently pursued excellence in all endeavors. This
-            portfolio aims to provide you with insights into my capabilities, achievements, and the value I bring to any
-            project or organization. </p>
+        <p>Greetings! Welcome to my portfolio. I am delighted to present to you a comprehensive overview of my
+          professional journey, accomplishments, and aspirations. My name is <span>Sachin Kumar </span>, and I am a
+          highly motivated and passionate individual dedicated to Computer Science. Throughout my career, I have honed
+          my skills, gained invaluable experiences, and consistently pursued excellence in all endeavors. This
+          portfolio aims to provide you with insights into my capabilities, achievements, and the value I bring to any
+          project or organization. </p>
 
-          <div class="tab-titles">
-            <h1>Education</h1>
+        <div class="tab-titles">
+          <h1>Education</h1>
+        </div>
+        <div class="tab-content">
+          <div className="education-details">
+
+            <div className="education-card">
+              <h2>Master of Computer Application</h2>
+              <span>Chandigarh University Mohali </span>
+            </div>
+            <div className="education-card">
+              <h2>Bachelor Of Science (Mathematics)</h2>
+              <span>Lalit Narayan Mithila University </span>
+            </div>
+
           </div>
-          <div class="tab-content">
-            <ul>
+          <div className="education-details">
+
+            <div className="education-card">
+              <h2>Intermediate of Science (I. Sc)</h2>
+              <span> C P P College Hisar Bourhar </span>
+            </div>
+            <div className="education-card">
+              <h2>10th Matriculation</h2>
+              <span>N M High School Gangaur </span>
+            </div>
+
+          </div>
+
+
+          {/* <ul>
               <li><span>Master of Computer Application </span><br/>Chandigarh University Mohali, Punjab <br/> Session:
                 2022 -2024 || SGPA : 8.11 </li>
               <li><span>Bachelor of Science in Mathematics </span><br/>Lalit Narayan Mithila University Darbhanga <br/>
@@ -35,9 +61,9 @@ function About() {
               <li><span>Matriculation </span><br/> Bihar Board Patna
                 <br/> Session: 2014 -2015 || Percentage : 75.6%
               </li>
-            </ul>
-          </div>
+            </ul> */}
         </div>
+      </div>
 
 
 

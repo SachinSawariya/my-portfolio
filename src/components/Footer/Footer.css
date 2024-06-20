@@ -42,12 +42,12 @@
 /* } */
 
 .f-contact h1 {
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
 }
 
 .f-contact span {
-    font-size: 22px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }

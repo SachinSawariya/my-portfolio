@@ -13,16 +13,19 @@ import 'swiper/css';
 function Testimonial() {
     const clients =[
         {
-            img: mypic2,
-            review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta autem, libero ipsam quidem sint a consequatur hic dignissimos commodi reiciendis ratione iure illum officiis harum id explicabo! Sapiente, deleniti ad."
+            img: bropic,
+            review: "Working with Sachin Kumar was a fantastic experience. His expertise, dedication, and friendly approach made our collaboration seamless. Sachin's ability to simplify complex tasks and deliver exceptional results is truly impressive. I highly recommend Sachin for his professionalism and talent.",
+            Name: 'Satish Kumar',
         },
         {
-            img: bropic,
-            review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse quo rem, placeat et cumque id nihil consectetur repudiandae doloribus natus, at officiis quam. Officiis quia excepturi deleniti eius ea!"
+            img: mypic2,
+            review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta autem, libero ipsam quidem sint a consequatur hic dignissimos commodi reiciendis ratione iure illum officiis harum id explicabo! Sapiente, deleniti ad.",
+            Name: 'Sawariya'
         },
         {
             img: profile3,
-            review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, labore sapiente consequuntur nemo, dolores dolor magnam blanditiis magni nostrum at quasi! Maiores, quas repellat quae unde magnam ex voluptates sed."
+            review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, labore sapiente consequuntur nemo, dolores dolor magnam blanditiis magni nostrum at quasi! Maiores, quas repellat quae unde magnam ex voluptates sed.",
+            Name:'John Doe'
         }
     ];
   return (
@@ -44,6 +47,7 @@ function Testimonial() {
                         <div className="testimonial">
                             <img src={client.img} alt=''/>
                             <span>{client.review}</span>
+                            <p>{client.Name}</p>
                         </div>
                     </SwiperSlide>
                 )

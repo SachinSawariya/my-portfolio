@@ -2,7 +2,9 @@
     display: flex;
     height: 80vh;
     margin-top: 5rem;
-    /* padding: 0 7%; */
+    padding: 0 7%;
+    /* padding: 0rem 5rem; */
+
 }
 
 .i-left {
@@ -86,7 +88,7 @@
         gap: 1rem;
     }
     .i-right{
-        transform: scale(0.6);
+        transform: scale(0.5);
         left: -5rem;
     }
     .floatingDiv:nth-of-type(1){
@@ -94,15 +96,17 @@
     }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 767px){
     .intro{
         flex-direction: column;
         height: 50rem;
         gap: 1rem;
     }
     .i-right{
-        transform: scale(0.6);
-        left: -5rem;
+        transform: scale(0.5);
+        justify-content: center;
+        align-items: center;
+        /* left: -2rem; */
     }
     .floatingDiv:nth-of-type(1){
         top: -7rem !important;

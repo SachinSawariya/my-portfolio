@@ -1,58 +1,119 @@
-.wrapper{
-    height: 10vh;
+/* General Styles */
+.wrapper {
     display: flex;
     justify-content: space-between;
-}
-.n-left{
-    flex: 1;
     align-items: center;
-    display: flex;
-    gap: 2rem;
-
+    padding: 0.5rem 7%;
+    height: 10vh;
+    box-shadow: var(--boxShadow);
+    position: relative;
+    z-index: 1000;
 }
-.n-name{
+
+.n-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.n-name {
     font-size: 1.3rem;
     font-weight: bold;
 }
-.n-right{
+
+.n-right {
     display: flex;
-    flex: 1;
     align-items: center;
-    justify-content: center;
-    font-weight: 400;
-}
-.n-list{
-    float: 10;
-}
-.n-list>ul{
-    display: flex;
-    gap: 2rem;
-    margin-right: 4rem;
-}
-.n-list ul li{
-    list-style: none;
-}
-.n-list ul li:hover{
-    cursor: pointer;
-    color: var(--orange);
-}
-.n-btn{
-    flex: 2;
 }
 
-@media screen and (max-width: 480px){
-    .n-list{
+.n-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.n-list ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.n-list ul li {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.n-list ul li:hover {
+    color: var(--orange);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.n-btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .n-btn {
         display: none;
     }
-    .n-btn{
+
+    .hamburger {
+        display: block;
+        color:rgb(102, 32, 215)
+    }
+
+    .n-list {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: var(--boxShadow);
+    }
+
+    .n-list.open {
+        display: flex;
+    }
+
+    .n-list ul {
+        flex-direction: column;
+        gap: 0.4rem;
+        width: 100%;
+        align-items:center;
+    }
+
+    .n-list ul li {
+        font-size: 22px;
+        padding: 0.6rem 0;
+        width: 100%;
+        text-align: center;
     }
 }
-@media screen and (max-width: 850px){
-    .n-list{
-        display: none;
+
+@media screen and (max-width: 480px) {
+    .n-list ul li {
+        font-size: 20px;
+        padding: 0.6rem 0;
     }
-    .n-btn{
-        display: none;
+
+    .n-name {
+        font-size: 1.1rem;
     }
 }

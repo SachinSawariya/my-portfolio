@@ -28,24 +28,24 @@ function Footer() {
                     <h2> Follow us.</h2>
                     <div className="f-icon">
                         <a href={instagramURL} target="_blank" rel="noopener noreferrer">
-                            <Insta color='white' size='3rem' />
+                            <Insta color='red' size='2rem' />
                         </a>
                         <a href={facebookURL} target="_blank" rel="noopener noreferrer">
-                            <Facebook color='white' size='3rem' />
+                            <Facebook color='blue' size='2rem' />
                         </a>
                         <a href={githubURL} target="_blank" rel="noopener noreferrer">
-                            <Github color='white' size='3rem' />
+                            <Github color='black' size='2rem' />
                         </a>
                         <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
-                            <Linkedin color='white' size='3rem' />
+                            <Linkedin color='black' size='2rem' />
                         </a>
                     </div>
                 </div>
                 <div className="copyright">
                     &copy; {new Date().getFullYear()} Sachin Kumar 
                     <span>All Rights Reserved.</span>
-                    {/* <span>Privacy Policy</span>
-                    <span>Term & Conditions</span> */}
+                    <span>Privacy Policy</span>
+                    <span>Term & Conditions</span>
                 </div>
             </div>
         </div >

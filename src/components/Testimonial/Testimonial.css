@@ -1,5 +1,5 @@
 .t-wrapper{
-    padding: 0 5rem 0 5rem;
+    padding: 0rem 5rem;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -25,10 +25,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    margin-left: 11rem;
+    justify-content: center;
+    margin-left: 15rem;
+    width: 50%;
     padding: 2rem;
-    width: 30rem;
     height: 13rem;
     background: rgba(255, 255, 255, 0.26);
     border: 7px solid var(--blueCard);

@@ -1,8 +1,8 @@
 .about {
-    padding: 58px 0;
+    padding: 0.1rem 5rem;
     color: #ababab;
     display: flex;
-    height: 85vh;
+    height: auto;
 }
 
 .a-left {
@@ -30,34 +30,65 @@
 }
 .a-right p{
     font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    line-height:1.3rem;
     justify-content: space-around;
     color: var(--black);
 }
-.tab-titles{
-    /* margin: 20px 0 40px; */
+.tab-titles h1{
+    font-size: 22px;
     color:brown;
     font-weight: bold;    
+    text-decoration: underline;
 }  
-.tab-content ul li{
-    line-height: 1.5rem;
-    list-style: none;
-    padding-top: 0rem;
-    margin-top:0.4rem;
-    color: var(--black);
+
+
+.education-card{
+    border: 3px solid var(--orangeCard);
+    border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    background: rgba(255, 255, 255, 0.26);
+    margin: 1.5rem;
+    padding: 0.7rem;
+    display: inline-block;
+    width: 15.2rem;
+    height: 5rem;
 }
-  .tab-content ul li span{
-    color:blueviolet;
+
+.education-card h2 {
+    font-weight: bold;
     font-size: 18px;
+    color: black;
 }
+
+.education-card span{
+    color: brown;
+    font-size: 16px;
+}
+
+.tab-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.education-details{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -1rem;
+    
+}
+
+
+
 
 @media screen and (max-width: 480px){
     .about{
         flex-direction: column;
         margin-top: 0;
-        gap: 1rem;
-        height: 90rem;
+        height: auto;
         width: auto;
-        padding: 0;
+        padding: 4px;
        text-align: justify;
     }
     .a-image{
@@ -67,8 +98,18 @@
         width: auto;
     }
     .a-right{
-        margin-top: 0rem;
+        /* margin-top: -2rem; */
         padding:0;
+    }
+
+    .tab-content{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-height: 50vh;
+    }
+    .education-card{
+        margin-bottom: -0.8rem;
     }
 }
 
@@ -78,7 +119,7 @@
         flex-direction: column;
         margin-top: 0;
         gap: 1rem;
-        height: 90rem;
+        height: 95rem;
         width: auto;
         padding: 0;
        text-align: justify;
