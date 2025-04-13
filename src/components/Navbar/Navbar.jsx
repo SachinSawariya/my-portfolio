@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import Toggle from '../Toggle/Toggle';
+import SachinLogo from '../../img/SachinLogo.jpg'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
     return (
         <div className="wrapper">
             <div className="n-left">
-                <div className="n-name">Sachin</div>
+                <img className="n-name" src={SachinLogo} />
                 <Toggle />
             </div>
             <div className="n-right">

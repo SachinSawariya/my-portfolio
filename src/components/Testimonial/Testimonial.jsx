@@ -19,27 +19,28 @@ function Testimonial() {
         },
         {
             img: mypic2,
-            review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta autem, libero ipsam quidem sint a consequatur hic dignissimos commodi reiciendis ratione iure illum officiis harum id explicabo! Sapiente, deleniti ad.",
-            Name: 'Sawariya'
+            review: "Sachin delivered a complex feature with incredible speed and precision. His ability to understand requirements and turn them into scalable, production-ready solutions is truly impressive. We’ve seen noticeable improvements in performance since his contributions.",
+            Name: ' Ashutosh Shukla, Product Manager, Knovator Technology'
         },
         {
             img: profile3,
-            review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, labore sapiente consequuntur nemo, dolores dolor magnam blanditiis magni nostrum at quasi! Maiores, quas repellat quae unde magnam ex voluptates sed.",
-            Name:'John Doe'
+            review: "Working with Sachin has been a fantastic experience. He's a team player who not only writes clean code but also contributes valuable ideas during discussions. His work on the domain configuration and API integrations was a game changer for our platform.",
+            Name:'Ankit Rakhadiys, Senior Developer'
         }
     ];
   return (
     <div className="t-wrapper" id='Testimonial'>
-        <div className="t-heading">
+      <h1 className='testmonials-heading'>My Testimonials </h1>
+      <div className="t-heading">
             <p>Client always <span> get Exceptional work </span> from me.</p>
         </div>
 
-        {/* slider  */}
 
         <Swiper
             modules = {[Pagination]}
             slidesPerView={1}
             pagination = {{clickable: true}}
+            className='swiper'
         >
             {clients.map((client, index) =>{
                 return(

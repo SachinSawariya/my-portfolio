@@ -1,6 +1,6 @@
 .intro {
     display: flex;
-    height: 80vh;
+    height: auto;
     margin-top: 5rem;
     padding: 0 7%;
     /* padding: 0rem 5rem; */
@@ -61,25 +61,25 @@
 .i-right>:nth-child(3){
     transform: scale(0.75);
     top:-8vh!important;;
-    left: 2vw !important;
+    left: 8vw !important;
 }
 .i-right>:nth-child(4){
     transform: scale(0.6);
     top: -12%;
-    left:-24% ;
+    left:-4% ;
 }
 .i-right>:nth-child(2){
     bottom: -vh!important;
-    /* right:  -12vw!important; */
-    /* transform: scale(0.9); */
+    right:  -6vw!important;
+    transform: scale(0.9);
     height: 30rem;
     width: 35rem;
 }
-/* .i-right>:nth-child(1){
+.i-right>:nth-child(1){
     bottom: 1vh!important;
-    right:  -8vw!important;
+    right:  -4vw!important;
     transform: scale(0.84);
-} */
+}
 
 @media screen and (max-width: 480px){
     .intro{
@@ -89,10 +89,25 @@
     }
     .i-right{
         transform: scale(0.5);
-        left: -5rem;
+        left: -7rem;
     }
     .floatingDiv:nth-of-type(1){
-        top: -7rem !important;
+        top: -8rem !important;
+    }
+    .floatingDiv:nth-of-type(2){
+        top: 18rem !important;
+    }
+    .i-right>:nth-child(2){
+        bottom: -vh!important;
+        right:  -100vw!important;
+        transform: scale(0.9);
+        height: 30rem;
+        width: 35rem;
+    }
+    .i-right>:nth-child(1){
+        bottom: -26vh!important;
+        right:  -104vw!important;
+        transform: scale(0.84);
     }
 }
 

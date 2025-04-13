@@ -22,8 +22,8 @@ function Home() {
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <p className='header'>Full Stack Developer</p>
-          <h1>Hii, I'm <span>Sachin Kumar </span><br />From Bihar.</h1>
+          <p className='header'>Jr. SDE - Full Stack Developer</p>
+          <h1>Hii, I'm <span>Sachin Kumar </span><br />From Mithilanchal.</h1>
           <p>Showcase the ability to collaborate effectively, implement secure coding practices, and continuously adapt and learn in order to deliver high-quality full stack solutions.</p>
         </div>
         <button className="button i-btn">Hire me</button>
@@ -46,10 +46,10 @@ function Home() {
         <img src={mypic} alt="" />
         <img src={glassesimoji} alt='' />
 
-        <div style={{ top: '64%', left: '10%' }}>
-          <FloatingDiv image={Crown} txt1="Web" txt2="Developer" />
+        <div style={{ top: '78%', left: '25%' }}>
+          <FloatingDiv image={Crown} txt1="Full Stack" txt2="Developer" />
         </div>
-        <div style={{ top: '6rem', left: '3rem' }}>
+        <div style={{ top: '6rem', left: '25%' }}>
           <FloatingDiv image={Crown} txt1="Programmer" />
         </div>
       </div>
