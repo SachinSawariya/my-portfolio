@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import './App.css'
 import About from './components/About/About';
 import Contact from './components/Contacts/Contact';
@@ -25,6 +26,7 @@ function App() {
       }}
 
       >
+      <Toaster />
       <Navbar/>
       <Home/>
       <About/>

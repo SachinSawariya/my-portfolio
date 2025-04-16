@@ -59,9 +59,9 @@
     z-index:1;
 }
 .i-right>:nth-child(3){
-    transform: scale(0.75);
-    top:-8vh!important;;
-    left: 8vw !important;
+    transform: scale(0.65);
+    top:-13vh!important;;
+    left: 12vw !important;
 }
 .i-right>:nth-child(4){
     transform: scale(0.6);
@@ -70,15 +70,15 @@
 }
 .i-right>:nth-child(2){
     bottom: -vh!important;
-    right:  -6vw!important;
-    transform: scale(0.9);
+    right:  -5vw!important;
+    transform: scale(0.99);
     height: 30rem;
     width: 35rem;
 }
 .i-right>:nth-child(1){
     bottom: 1vh!important;
-    right:  -4vw!important;
-    transform: scale(0.84);
+    right:  -3vw!important;
+    transform: scale(0.90);
 }
 
 @media screen and (max-width: 480px){

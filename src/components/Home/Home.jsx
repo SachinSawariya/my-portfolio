@@ -8,7 +8,7 @@ import vector2 from '../../img/Vector2.png';
 // import thumbup from '../../img/thumbup.png';
 import glassesimoji from '../../img/glassesimoji.png';
 import Crown from '../../img/crown.png';
-import mypic from '../../img/mypic.png';
+import mypic from '../../img/myPicture.png';
 
 import FloatingDiv from './FloatingDiv';
 

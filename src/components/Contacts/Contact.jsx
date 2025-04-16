@@ -3,6 +3,7 @@ import './Contact.css';
 import contact from '../../img/contact.jpeg'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import toast from 'react-hot-toast';
 
 
 function Contact() {
@@ -17,6 +18,8 @@ function Contact() {
       .then((result) => {
           console.log(result.text);
           setDone(true);
+          toast.success('Email sent successfully!');
+          form.current.reset();
       }, (error) => {
           console.log(error.text);
       });
