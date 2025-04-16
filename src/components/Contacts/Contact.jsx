@@ -14,7 +14,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_sfxs64t', 'template_upagjat', form.current, 'xSI5OxInQQliLbpOr')
+    emailjs.sendForm(process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, process.env.REACT_APP_EMAIL_JS_TEMPLATE, form.current, process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           setDone(true);
