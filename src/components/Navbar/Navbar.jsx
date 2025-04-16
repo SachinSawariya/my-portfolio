@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <div className="wrapper">
             <div className="n-left">
-                <img className="n-name" src={SachinLogo} />
+                <img className="n-name" alt='logo' src={SachinLogo} />
                 <Toggle />
             </div>
             <div className="n-right">
