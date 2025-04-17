@@ -122,7 +122,7 @@
 .experience-details {
     display: flex;
     color: black;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
