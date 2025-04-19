@@ -219,7 +219,7 @@
     .a-image {
         transform: scale(0.8);
         margin-left: -2rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         width: auto;
     }
 
@@ -253,14 +253,18 @@
     }
 
     .a-image {
-        transform: scale(0.8);
+        transform: scale(0.75);
         margin-left: -2rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         width: auto;
     }
 
     .a-right {
         margin-top: 0rem;
         padding: 0;
+    }
+    .sub-title {
+        margin-top: -2rem;
+        text-align: center;
     }
 }

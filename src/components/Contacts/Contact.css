@@ -55,18 +55,19 @@
         margin-left: 2rem;
     }
     .c-right *{
-        transform: scale(0.95);
+        transform: scale(0.85);
     }
 }
 @media screen and (max-width: 850px){
     .contact-form{
         flex-direction: column;
         height: 45rem;
+        margin-top: 0;
     }
     .c-left img{
         margin-left: 2rem;
     }
     .c-right *{
-        transform: scale(0.95);
+        transform: scale(0.85);
     }
 }

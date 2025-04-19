@@ -10,22 +10,15 @@
     position: absolute;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
-    /* flex-direction: column; */
     width: 82%;
     color: black;
     margin-left: 3rem;
     margin-top: 5rem;
-    /* margin-left: 10rem; */
 }
 
-/* .c-icon { */
-    /* display: flex;
-    flex-direction: column; */
-    /* margin-left: 2rem; */
-    /* justify-content: center; */
-    /* margin-bottom: 1rem; */
-/* } */
+.copyrightIcon {
+    margin-top: 16px;
+}
 
 .c-icon h2 {
     font-size: xx-large !important;
@@ -33,13 +26,6 @@
     text-align: center;
 }
 
-/* .f-contact { */
-    /* margin-top: 4rem;
-    margin-bottom: -6rem; */
-    /* flex-direction: column; */
-
-    /* margin-top: 4rem; */
-/* } */
 
 .f-contact h1 {
     font-size: 30px;
@@ -50,25 +36,24 @@
     font-size: 18px;
     display: flex;
     justify-content: center;
+    margin-top: 4px;
 }
 
 .f-icon {
     display: flex;
     gap: 1rem;
-    /* margin-left: 22rem; */
-    /* align-items: center !important;
-    justify-content: center !important; */
 }
 
 .copyright span {
     font-size: 18px;
     display: flex;
     justify-content: center;
+    margin-top: 6px;
 }
 .copyright {
-    margin-top: 20px; /* Adjust this value to control the spacing between the content and copyright notice */
+    margin-top: 20px;
     font-size: 20px;
-    color: black; /* Change the color as needed */
+    color: black;
 }
 
 @media screen and (max-width: 480px) {
@@ -96,13 +81,11 @@
     }
 
     .f-icon a {
-        font-size: 5px; /* Adjust the size as needed for smaller screens */
-        /* margin: 0 5px; Adjust the spacing between icons as needed */
+        font-size: 5px;
         margin-top:-12px;
     }
 
     .copyright{
-        /* margin-top: 5px; */
         font-size: 16px;
         justify-content: center;
         text-align: center;

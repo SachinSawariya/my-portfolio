@@ -89,4 +89,9 @@
     .cards *{
         position: static;
     }
+    .s-left span{
+        text-align: center;
+        color: brown;
+        margin-top: -2rem;
+    }
 }

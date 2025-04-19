@@ -20,18 +20,18 @@ function Footer() {
             <div className="f-content">
                 <div className='f-contact'>
                     <h1> Contact us</h1>
-                    <span> 8434275032</span>
-                    <span> Sachin.developer32@gmail.com</span>
-                    <span> Add - Madhubani, Bihar</span>
+                    <span>Mob No: 8434275032</span>
+                    <span> Sachinsawariya12@gmail.com</span>
+                    <span> Add: Madhubani, Bihar</span>
                 </div>
                 <div className='c-icon'>
                     <h2> Follow us.</h2>
                     <div className="f-icon">
                         <a href={instagramURL} target="_blank" rel="noopener noreferrer">
-                            <Insta color='red' size='2rem' />
+                            <Insta color='black' size='2rem' />
                         </a>
                         <a href={facebookURL} target="_blank" rel="noopener noreferrer">
-                            <Facebook color='blue' size='2rem' />
+                            <Facebook color='black' size='2rem' />
                         </a>
                         <a href={githubURL} target="_blank" rel="noopener noreferrer">
                             <Github color='black' size='2rem' />
@@ -40,12 +40,13 @@ function Footer() {
                             <Linkedin color='black' size='2rem' />
                         </a>
                     </div>
+
                 </div>
                 <div className="copyright">
-                    &copy; {new Date().getFullYear()} Sachin Kumar 
-                    <span>All Rights Reserved.</span>
                     <span>Privacy Policy</span>
                     <span>Term & Conditions</span>
+                    <span>All Rights Reserved.</span>
+                    <span> &copy; {new Date().getFullYear()} Sachin Kumar </span>
                 </div>
             </div>
         </div >

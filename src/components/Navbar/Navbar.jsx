@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
-import Toggle from '../Toggle/Toggle';
+// import Toggle from '../Toggle/Toggle';
 import SachinLogo from '../../img/SachinLogo.jpg'
 
 function Navbar() {
@@ -15,7 +15,7 @@ function Navbar() {
         <div className="wrapper">
             <div className="n-left">
                 <img className="n-name" alt='logo' src={SachinLogo} />
-                <Toggle />
+                {/* <Toggle /> */}
             </div>
             <div className="n-right">
                 <button className="hamburger" onClick={toggleMenu}>

@@ -129,7 +129,7 @@
   .portfolio span {
     font-size: 30px;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 12rem;
   }
 
   .project-div {
@@ -140,7 +140,7 @@
 
   .project-card {
     width: 1000%;
-    max-width: 320px;
+    max-width: 300px;
     padding: 0.8rem;
   }
 
