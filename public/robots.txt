@@ -1,3 +1,31 @@
 # https://www.robotstxt.org/robotstxt.html
+# Robots.txt for Sachin Kumar's Portfolio Website
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /src/
+Disallow: /node_modules/
+
+# Allow specific important directories
+Allow: /src/components/
+Allow: /src/img/
+Allow: /public/
+
+# Sitemap location
+Sitemap: https://sachinsawariya.netlify.app/sitemap.xml
+
+# Crawl delay (optional, be respectful)
+Crawl-delay: 1
+
+# Specific search engine instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

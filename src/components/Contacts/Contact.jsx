@@ -49,7 +49,7 @@ function Contact() {
     <div className="contact-form" id='Contacts'>
       <div className="c-left">
         <p>Contact Me.</p>
-        <img src={contact} alt='' />
+        <img src={contact} alt='Contact form illustration' />
       </div>
 
       <div className="c-right">

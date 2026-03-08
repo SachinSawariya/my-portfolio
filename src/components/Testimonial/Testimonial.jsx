@@ -46,7 +46,7 @@ function Testimonial() {
                 return(
                     <SwiperSlide key={index}>
                         <div className="testimonial">
-                            <img src={client.img} alt=''/>
+                            <img src={client.img} alt={`${client.Name} testimonial photo`}/>
                             <span>{client.review}</span>
                             <p>{client.Name}</p>
                         </div>

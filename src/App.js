@@ -8,34 +8,36 @@ import Navbar from "./components/Navbar/Navbar";
 import Project from './components/Projects/Project';
 import Services from './components/Services/Services';
 import Testimonial from './components/Testimonial/Testimonial';
+import SEOWrapper from './components/SEO/SEOWrapper';
 
 import { themeContext } from './Context';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 function App() {
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
+  const [currentSection, setCurrentSection] = useState('home');
 
   return (
-    <div className="App"
-      style = {{
-        background : darkMode? 'black' : '',
-        color: darkMode ? 'white' : '' 
-      }}
-
-      >
-      <Toaster />
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Services/>
-      <Project/>
-      <Testimonial/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <SEOWrapper section={currentSection}>
+      <div className="App"
+        style ={{
+          background : darkMode? 'black' : '',
+          color: darkMode ? 'white' : '' 
+        }}
+        >
+        <Toaster />
+        <Navbar setCurrentSection={setCurrentSection}/>
+        <Home setCurrentSection={setCurrentSection}/>
+        <About setCurrentSection={setCurrentSection}/>
+        <Services setCurrentSection={setCurrentSection}/>
+        <Project setCurrentSection={setCurrentSection}/>
+        <Testimonial setCurrentSection={setCurrentSection}/>
+        <Contact setCurrentSection={setCurrentSection}/>
+        <Footer/>
+      </div>
+    </SEOWrapper>
   );
 }
 

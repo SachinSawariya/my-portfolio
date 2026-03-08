@@ -4,7 +4,7 @@ import './FloatingDiv.css';
 function FloatingDiv({image, txt1, txt2}) {
   return (
     <div className="floating">
-        <img src={image} alt="" />
+        <img src={image} alt={`${txt1} ${txt2} icon`} />
         <span>
             {txt1} 
             <br/>

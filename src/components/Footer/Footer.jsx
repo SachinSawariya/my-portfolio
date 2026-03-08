@@ -16,7 +16,7 @@ function Footer() {
     const linkedinURL = 'https://www.linkedin.com/in/sachin-kumar-a91a62223/';
     return (
         <div className="footer">
-            <img src={wave} alt='' style={{ width: '100%', height: '20rem' }} />
+            <img src={wave} alt='Decorative wave footer element' style={{ width: '100%', height: '20rem' }} />
             <div className="f-content">
                 <div className='f-contact'>
                     <h1> Contact us</h1>
