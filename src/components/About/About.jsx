@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css";
 import my_pic from "./About_pic.png";
-import { experiences } from "./aboutData";
-import { education } from "./aboutData";
 
 function About() {
   return (
