@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "./About.css";
-import my_pic from "./About_pic.jpeg";
+import my_pic from "./About_pic.png";
 import { experiences } from "./aboutData";
 import { education } from "./aboutData";
 
 function About() {
-  const [activeTab, setActiveTab] = useState("experience");
-
   return (
     <section className="about" id="About" aria-label="About Section">
       <div className="a-left">
@@ -14,14 +12,14 @@ function About() {
           <img
             src={my_pic}
             alt="Sachin Kumar - Professional Headshot"
-            style={{ width: "21rem", height: "28rem" }}
+            className="about-profile-img"
           />
         </div>
       </div>
 
       <article className="a-right">
         <header>
-          <h1 className="sub-title"> About Me.</h1>
+          <h1 className="sub-title"> About <span>Me.</span></h1>
         </header>
         <div className="about-content">
           <p>
@@ -47,57 +45,6 @@ function About() {
           </p>
           <p>Let’s build something amazing together!</p>
         </div>
-
-        <nav className="tab-titles" aria-label="Experience and Education Tabs">
-        <button
-            className={activeTab === "experience" ? "active-tab" : ""}
-            onClick={() => setActiveTab("experience")}
-            aria-pressed={activeTab === "experience"}
-          >
-            Experience
-          </button>
-          <button
-            className={activeTab === "education" ? "active-tab" : ""}
-            onClick={() => setActiveTab("education")}
-            aria-pressed={activeTab === "education"}
-          >
-            Education
-          </button>
-        </nav>
-
-        <div className="tab-content" role="tabpanel">
-          {activeTab === "education" && (
-            <>
-              <div className="education-details" >
-                {education.map((edu, i) => (
-                  <article className="education-card" key={i}>
-                    <h2>{edu.degree}</h2>
-                    <span>{edu.institution}</span>
-                    <p className="education-duration">Year of Passing: {edu.year}</p>
-                    <p>{edu.description}</p>
-
-                  </article>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-        {activeTab === "experience" && (
-          <div className="experience-details" role="tabpanel">
-            {experiences.map((exp, i) => (
-              <article className="experience-card" key={i}>
-                <h2>{exp.role}</h2>
-                <span>{exp.company}</span>
-                <p className="experience-duration">{exp.duration}</p>
-                <ul className="experience-points">
-                  {exp.points.map((point, index) => (
-                    <li key={index}>{point}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-        )}
       </article>
     </section>
   );

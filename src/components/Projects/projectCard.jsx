@@ -4,24 +4,37 @@ import "./Project.css";
 function ProjectCard({ data }) {
   return (
     <div className="project-card">
-      {data.imgUrl && (
-        <img src={data.imgUrl} alt={data.title} className="project-image" />
-      )}
-      <div className="project-data">
-        <h2 className="project-title">{data.title}</h2>
-        <p className="project-description">{data.description}</p>
-        <div className="project-url">
+      <div className="project-image-container">
+        {data.imgUrl && (
+          <img
+            src={data.imgUrl}
+            alt={data.title}
+            className="project-image"
+            loading="lazy"
+            decoding="async"
+          />
+        )}
+        <div className="project-overlay">
           {data.link && (
             <a
               href={data.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="project-link"
+              className="project-btn"
             >
-              View Project
+              Explore Project
             </a>
           )}
         </div>
+      </div>
+      <div className="project-data">
+        <h2 className="project-title">{data.title}</h2>
+        <div className="project-tags">
+          {data.tags && data.tags.map((tag, i) => (
+            <span key={i} className="project-tag">{tag}</span>
+          ))}
+        </div>
+        <p className="project-description">{data.description}</p>
       </div>
     </div>
   );

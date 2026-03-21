@@ -1,4 +1,4 @@
-.card{
+.card {
     width: 15rem;
     height: 12rem;
     position: absolute;
@@ -11,36 +11,59 @@
     border-radius: 20px;
     box-shadow: var(--boxShadow);
     background: rgba(255, 255, 255, 0.26);
-    padding:0px 36px 2rem 36px;
+    padding: 0px 36px 2rem 36px;
 }
-.card >:nth-child(2){
+
+.card>:nth-child(2) {
     color: var(--black);
     font-size: 20px;
     font-weight: bold;
 }
-.card >:nth-child(3){
+
+.card>:nth-child(3) {
     color: var(--gray);
     font-size: 18px;
 }
-.card img{
+
+.card img {
     transform: scale(0.7);
     margin-bottom: -2rem;
 }
-.c-btn{
+
+.c-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-top: auto;
+    transition: all 0.3s ease;
     cursor: pointer;
-    background: #ffffff;
-    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
-    border-radius: 5px;
-    color:blue ;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-@media screen and (max-width: 480px){
-    .card{
-        width:70%;
+.c-link .arrow {
+    color: var(--orange);
+    transition: transform 0.3s ease;
+}
+
+.c-link:hover {
+    color: var(--orange);
+}
+
+.c-link:hover .arrow {
+    transform: translateX(5px);
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 70%;
     }
 }
-@media screen and (max-width: 850px){
-    .card{
-        width:70%;
+
+@media screen and (max-width: 850px) {
+    .card {
+        width: 70%;
     }
 }

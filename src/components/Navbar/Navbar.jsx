@@ -29,6 +29,12 @@ function Navbar() {
                         <Link spy={true} to='About' smooth={true}>
                             <li onClick={toggleMenu}>About</li>
                         </Link>
+                        <Link spy={true} to='Experience' smooth={true}>
+                            <li onClick={toggleMenu}>Experience</li>
+                        </Link>
+                        <Link spy={true} to='Education' smooth={true}>
+                            <li onClick={toggleMenu}>Education</li>
+                        </Link>
                         <Link spy={true} to='Services' smooth={true}>
                             <li onClick={toggleMenu}>Services</li>
                         </Link>

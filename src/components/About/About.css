@@ -1,270 +1,132 @@
 .about {
-    padding: 0.1rem 5rem;
-    color: #ababab;
+    padding: 2rem 5rem;
+    color: var(--black);
     display: flex;
     height: auto;
-    margin-top: 8rem;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 4rem;
 }
 
 .a-left {
     display: flex;
     position: relative;
     flex: 1;
-    flex-direction: column;
-    flex-basis: 35%;
+    justify-content: center;
+    align-items: center;
 }
 
-.a-image img {
-    margin-top: 5rem;
-    border-radius: 15px;
+.a-image {
+    display: flex;
+    justify-content: center;
+}
+
+/* Desktop image — controlled here, not inline */
+.about-profile-img {
+    width: 21rem;
+    height: 28rem;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: var(--smboxShadow);
+    border: 5px solid white;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.about-profile-img:hover {
+    transform: scale(1.05);
 }
 
 .a-right {
-    flex: 1;
-    position: relative;
-    flex-basis: 60%;
+    flex: 1.5;
 }
 
 .sub-title {
-    font-size: 40px;
-    font-weight: 500;
-    color: brown
-}
-
-.a-right p {
-    font-size: 20px;
-    line-height: 1.3rem;
-    justify-content: space-around;
+    font-size: 3.5rem;
+    font-weight: 800;
     color: var(--black);
+    margin-bottom: 2rem;
 }
 
-.tab-titles h1 {
-    font-size: 22px;
-    color: brown;
-    font-weight: bold;
-    text-decoration: underline;
+.sub-title span {
+    color: var(--orange);
 }
 
-
-.education-card {
-    border: 3px solid var(--orangeCard);
-    border-radius: 20px;
-    box-shadow: var(--boxShadow);
-    background: rgba(255, 255, 255, 0.26);
-    padding: 0.7rem;
-    display: inline-block;
-    width: 15.2rem;
-    height:14rem;
-    margin: 1.5rem auto;
-}
-
-.education-card h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-    margin-bottom: 0.3rem;
-}
-
-.education-card span {
-    color: brown;
-    font-size: 18px;
-}
-.education-details {
-    justify-content: space-around;
-    align-items: center;
-    margin-top: -1rem;
-}
-.education-card .education-duration{
-    font-size: 18px;
-    color: rgb(127, 9, 9);
-    margin-top: 0.3rem;
-    margin-bottom: 0.6rem;
-    display: block;
-}
-
-
-.tab-content {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: auto;
-}
-
-.tab-titles {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-}
-
-.tab-titles button {
-    font-size: 18px;
-    padding: 0.5rem 1rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    color: black;
-    border-bottom: 1px solid gray;
-    transition: 0.3s;
-}
-
-.tab-titles button:hover {
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: var(--black);
-    background-color:peachpuff;
+    margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
-.tab-titles .active-tab {
-    color: black;
-    background-color: var(--orange);
-    border-bottom: 2px solid black;
+.about-content span {
+    color: var(--orange);
+    font-weight: 700;
 }
 
-.experience-details {
-    display: flex;
-    color: black;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.experience-points p{
-    line-height: 1rem;
-}
-
-.experience-card {
-    border: 3px solid var(--orangeCard);
-    border-radius: 20px;
-    box-shadow: var(--boxShadow);
-    background: rgba(255, 255, 255, 0.26);
-    margin: 1.5rem auto;
-    padding: 1rem;
-    width: 90%;
-    max-width: 700px;
-  }
-  
-  .experience-card h2 {
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-    margin-bottom: 0.3rem;
-  }
-  
-  .experience-card span {
-    color: brown;
-    font-size: 16px;
-  }
-  
-  .experience-duration {
-    font-size: 14px;
-    color: gray;
-    margin-top: 0.3rem;
-    margin-bottom: 0.6rem;
-    display: block;
-  }
-  
-  .experience-points {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    font-size: 15px;
-    color: #444;
-    line-height: 1.5rem;
-  }
-  
-  .tab-titles button {
-    margin-right: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-    background-color: transparent;
-    border: 2px solid brown;
-    color: brown;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  
-  .education-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    padding: 0 1rem;
-}
-  .tab-content {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-@media screen and (max-width: 480px) {
+/* ---- TABLET (≤ 1024px) ---- */
+@media screen and (max-width: 1024px) {
     .about {
-        flex-direction: column;
-        margin-top: 0;
-        height: auto;
-        width: auto;
-        padding: 4px;
-        text-align: justify;
+        padding: 2rem 3rem;
+        gap: 2.5rem;
     }
-
-    .a-image {
-        transform: scale(0.8);
-        margin-left: -2rem;
-        margin-top: 4rem;
-        width: auto;
-    }
-
-    .a-right {
-        /* margin-top: -2rem; */
-        padding: 0;
-    }
-
-    .tab-content {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .education-card {
-        margin-bottom: -0.8rem;
-        height: auto;
-    }
-}
-
-
-@media screen and (max-width: 850px) {
-    .about {
-        flex-direction: column;
-        margin-top: 0;
-        gap: 1rem;
-        height: auto;
-        width: auto;
-        padding: 0;
-        text-align: justify;
-    }
-
-    .a-image {
-        transform: scale(0.75);
-        margin-left: -2rem;
-        margin-top: 4rem;
-        width: auto;
-    }
-
-    .a-right {
-        margin-top: 0rem;
-        padding: 0;
+    .about-profile-img {
+        width: 17rem;
+        height: 22rem;
     }
     .sub-title {
-        margin-top: -2rem;
+        font-size: 2.8rem;
+    }
+}
+
+/* ---- MOBILE (≤ 768px) ---- */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 2rem;
         text-align: center;
+        margin-top: 2rem;
+        gap: 1.5rem;
+    }
+    .a-left {
+        width: 100%;
+    }
+    .about-profile-img {
+        width: 200px;
+        height: 250px;
+    }
+    .a-right {
+        text-align: center;
+        width: 100%;
+    }
+    .sub-title {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .about-content p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+/* ---- SMALL MOBILE (≤ 480px) ---- */
+@media screen and (max-width: 480px) {
+    .about {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+    .about-profile-img {
+        width: 160px;
+        height: 210px;
+        border-radius: 20px;
+    }
+    .sub-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.75rem;
+    }
+    .about-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
     }
 }

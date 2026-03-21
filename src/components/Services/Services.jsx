@@ -3,25 +3,23 @@ import "./services.css";
 import Glasses from "../../img/glasses.png";
 import Card from "./Card";
 import Resume from "../../img/SachinKumar_resume.pdf";
+
 function Services() {
   return (
     <div className="services" id="Services">
       <div className="s-left">
-        <span>My Services</span>
+        <h1>My <span>Services</span></h1>
         <p>
-          I offer end-to-end web development services, combining design,
-          front-end, and back-end expertise to deliver complete, scalable
-          solutions.
+          I deliver high-performance, scalable web solutions by bridging the gap between 
+          stunning design and robust back-end architecture.
         </p>
         <p>
-          I specialize in building responsive user interfaces with modern
-          technologies like React, Next.js, while also developing secure and
-          efficient server-side systems using Node.js and Express.
+          Specializing in the <strong>MERN stack</strong> and modern frameworks like <strong>Next.js</strong>, 
+          I build responsive UIs that are as functional as they are beautiful.
         </p>
         <p>
-          Whether it’s database management, API integration, or deployment
-          automation, I ensure performance, security, and a seamless user
-          experience in every project.
+          From seamless API integrations to secure cloud deployments and database optimization, 
+          I ensure every digital product is built for speed, security, and impact.
         </p>
         <a href={Resume} download>
           <button className="button s-btn">Download CV</button>

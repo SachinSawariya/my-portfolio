@@ -22,8 +22,8 @@ function Home() {
     <section className="intro" aria-label="Hero Section">
       <header className="i-left">
         <div className="i-name">
-          <p className='header'>Jr. SDE - Full Stack Developer</p>
-          <h1>Hii, I'm <span>Sachin Kumar </span><br />From Mithilanchal.</h1>
+          <p className='header'>Software Engineer | Full Stack Developer</p>
+          <h1>Hii, I'm <span>Sachin Kumar </span><br />From Mithila.</h1>
           <p>Showcase the ability to collaborate effectively, implement secure coding practices, and continuously adapt and learn in order to deliver high-quality full stack solutions.</p>
         </div>
         <button className="button i-btn">Hire me</button>

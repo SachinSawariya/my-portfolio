@@ -1,153 +1,179 @@
 .footer {
     display: flex;
-    align-items: center;
-    margin: -0.5rem -3.5rem;
+    flex-direction: column;
+    width: 100%;
     position: relative;
-    margin-top: -5rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-wave {
+    width: 100%;
+    height: 25rem;
+    object-fit: fill;
 }
 
 .f-content {
     position: absolute;
     display: flex;
-    justify-content: space-around;
-    width: 82%;
-    color: black;
-    margin-left: 3rem;
-    margin-top: 5rem;
-}
-
-.copyrightIcon {
-    margin-top: 16px;
-}
-
-.c-icon h2 {
-    font-size: xx-large !important;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.f-main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     text-align: center;
 }
 
-
-.f-contact h1 {
-    font-size: 30px;
-    text-align: center;
+.f-col h1, .f-col h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--black);
+    margin: 0;
 }
 
-.f-contact span {
-    font-size: 18px;
+.f-col h1 span, .f-col h2 span {
+    color: var(--orange);
+}
+
+.f-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.f-contact-details span {
+    font-size: 1.1rem;
+    color: var(--black);
+}
+
+.f-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icon-wrapper {
+    background: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: var(--black);
+}
+
+.icon-wrapper:hover {
+    background: var(--orange);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.f-bottom-bar {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4px;
 }
 
-.f-icon {
-    display: flex;
-    gap: 1rem;
+.f-copy {
+    color: var(--black);
+    font-size: 0.95rem;
 }
 
-.copyright span {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    margin-top: 6px;
-}
-.copyright {
-    margin-top: 20px;
-    font-size: 20px;
-    color: black;
+/* TABLET */
+@media screen and (max-width: 1024px) {
+    .f-content {
+        padding-top: 2rem;
+    }
+    .f-col h1, .f-col h2 {
+        font-size: 1.9rem;
+    }
 }
 
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    .footer {
+        height: auto;
+        background: var(--orangeCard);
+    }
+    .f-wave {
+        display: none;
+    }
+    .f-content {
+        position: static;
+        left: auto;
+        transform: none;
+        width: 100%;
+        padding: 3rem 1.5rem 2rem;
+        box-sizing: border-box;
+    }
+    .f-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .f-col {
+        width: 100%;
+        align-items: center;
+    }
+    .f-col h1, .f-col h2 {
+        font-size: 1.6rem;
+    }
+    .f-contact-details span {
+        font-size: 0.95rem;
+    }
+    .f-icons {
+        justify-content: center;
+    }
+    .f-bottom-bar {
+        padding: 1rem 1.5rem;
+    }
+    .f-copy {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+}
+
+/* SMALL MOBILE */
 @media screen and (max-width: 480px) {
     .f-content {
-        flex-direction: column;
-        margin-top: 7rem;
-        margin-bottom: 2rem;
+        padding: 2.5rem 1rem 1.5rem;
     }
-
-    .f-content p {
-        width: auto;
-        padding: 0;
+    .f-col h1, .f-col h2 {
+        font-size: 1.4rem;
     }
-
-    .f-contact h1 {
-        font-size: 22px;
+    .icon-wrapper {
+        width: 3rem;
+        height: 3rem;
     }
-
-    .f-contact span {
-        font-size: 16px;
-        margin-top: -2px;
+    .f-icons {
+        gap: 1rem;
     }
-    .f-icon{
-        justify-content: center;
+    .f-contact-details span {
+        font-size: 0.9rem;
     }
-
-    .f-icon a {
-        font-size: 5px;
-        margin-top:-12px;
-    }
-
-    .copyright{
-        font-size: 16px;
-        justify-content: center;
-        text-align: center;
-        margin-top: -1px;
-
-    }
-    .c-icon h2{
-        font-size: 22px;
-        margin-top: 2px;
-    }
-    .copyright span{
-        margin-top: -2px;
-    }
-
-}
-
-
-
-@media screen and (max-width: 850px) {
-    .f-content {
-        flex-direction: column;
-        margin-top: 7rem;
-        margin-bottom: 2rem;
-    }
-
-    .f-content p {
-        width: auto;
-        padding: 0;
-    }
-
-    .f-contact h1 {
-        font-size: 22px;
-    }
-
-    .f-contact span {
-        font-size: 16px;
-        margin-top: -2px;
-    }
-    .f-icon{
-        justify-content: center;
-    }
-
-    .f-icon a {
-        font-size: 5px; /* Adjust the size as needed for smaller screens */
-        /* margin: 0 5px; Adjust the spacing between icons as needed */
-        margin-top:-12px;
-    }
-
-    .copyright{
-        /* margin-top: 5px; */
-        font-size: 16px;
-        justify-content: center;
-        text-align: center;
-        margin-top: -1px;
-
-    }
-    .c-icon h2{
-        font-size: 22px;
-        margin-top: 2px;
-    }
-    .copyright span{
-        margin-top: -2px;
-    }
-
 }

@@ -1,8 +1,19 @@
 export const experiences = [
   {
+    role: "Full Stack Developer (Freelance)",
+    company: "Self-Employed",
+    duration: "Jul 2025 – Present",
+    points: [
+      "Developed and maintained several client websites using the MERN stack.",
+      "Implemented responsive designs and optimized performance for better user engagement.",
+      "Integrated payment gateways and third-party APIs for various business needs.",
+      "Provided technical support and maintenance for existing web applications.",
+    ],
+  },
+  {
     role: "MERN Stack Developer",
     company: "Knovator Technology Pvt Ltd",
-    duration: "Jul 2024 – Present",
+    duration: "Jul 2024 – Jul 2025",
     points: [
       "Contributed to the Artha Job Portal, a SaaS platform for employers and job seekers.",
       "Built automated domain configuration with SSL setup for custom domains.",
@@ -10,7 +21,7 @@ export const experiences = [
       "Created an embed script module for analytics and chatbot integrations.",
       "Collaborated with QA/support to resolve production issues and ensure uptime.",
     ],
-  },
+  }
 ];
 
 export const education = [

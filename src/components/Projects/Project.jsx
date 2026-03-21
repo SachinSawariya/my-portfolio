@@ -7,7 +7,7 @@ import { projectData } from "./projectList";
 function Project() {
   return (
     <div className="portfolio" id="Projects">
-      <span> Recent Projects </span>
+      <span> Recent <span>Projects</span> </span>
       <div className="project-div">
         {projectData.map((data) => (
           <ProjectCard data={data} />
