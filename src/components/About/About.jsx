@@ -21,25 +21,19 @@ function About() {
         </header>
         <div className="about-content">
           <p>
-            Hi, I’m <span>Sachin Kumar</span>, a passionate MERN Stack Developer
-            with a strong foundation in building scalable, high-performance web
-            applications. With hands-on experience in developing SaaS platforms
-            like the Artha Job Board, I specialize in creating seamless user
-            experiences and writing clean, maintainable code.{" "}
+            Hi, I’m <span>Sachin Kumar</span>, a <strong>Software Engineer</strong> and <strong>Full Stack Developer</strong> specializing in building 
+            scalable, high-performance web applications with clean architecture and seamless user experiences.
           </p>
           <p>
-            At Knovator Technology, I’ve worked on impactful features such as
-            automated domain configuration, bulk data uploads, and third-party
-            integrations including Google Calendar and OAuth. My role bridges both
-            development and support, giving me a unique perspective on delivering
-            user-focused solutions that are technically sound and easy to
-            maintain.
+            I focus on developing efficient backend systems, designing responsive frontends, and 
+            integrating secure APIs to deliver reliable and production-ready solutions.
           </p>
           <p>
-            I’m constantly exploring new technologies, optimizing backend
-            services, and looking for ways to solve real-world problems through
-            code. Whether it's performance tuning, API design, or product
-            scalability—I’m all in.
+            With a strong emphasis on performance, scalability, and maintainability, I aim to create 
+            solutions that are not only technically sound but also drive real impact.
+          </p>
+          <p>
+            I’m continuously learning and improving, always looking for better ways to solve problems through code.
           </p>
           <p>Let’s build something amazing together!</p>
         </div>

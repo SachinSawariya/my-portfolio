@@ -78,15 +78,15 @@
 
 /* Vector1 - background blob */
 .i-right > :nth-child(1) {
-    bottom: 14vh !important;
-    right: 0vw !important;
+    bottom: 12vh !important;
+    right: -2vw !important;
     transform: scale(0.90);
 }
 
 /* Vector2 / main pic background */
 .i-right > :nth-child(2) {
     bottom: 0;
-    right: -5vw !important;
+    right: -3vw !important;
     transform: scale(0.99);
     height: 30rem;
     width: 35rem;

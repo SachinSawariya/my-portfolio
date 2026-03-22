@@ -1,13 +1,14 @@
 export const experiences = [
   {
-    role: "Full Stack Developer (Freelance)",
-    company: "Self-Employed",
+    role: "Software Engineer",
+    company: "Codinova Technologies",
     duration: "Jul 2025 – Present",
     points: [
-      "Developed and maintained several client websites using the MERN stack.",
-      "Implemented responsive designs and optimized performance for better user engagement.",
-      "Integrated payment gateways and third-party APIs for various business needs.",
-      "Provided technical support and maintenance for existing web applications.",
+      "Engineered scalable MERN stack applications handling real-world production workloads.",
+      "Designed and developed an admin analytics dashboard for real-time tracking of user activity and performance.",
+      "Optimized backend APIs and database queries, significantly improving response time and system efficiency.",
+      "Implemented reusable and modular React components to enhance maintainability and scalability.",
+      "Integrated secure authentication and role-based access control for multi-user environments.",
     ],
   },
   {
@@ -15,28 +16,28 @@ export const experiences = [
     company: "Knovator Technology Pvt Ltd",
     duration: "Jul 2024 – Jul 2025",
     points: [
-      "Contributed to the Artha Job Portal, a SaaS platform for employers and job seekers.",
-      "Built automated domain configuration with SSL setup for custom domains.",
-      "Developed XML job import and bulk upload features for efficient onboarding.",
-      "Created an embed script module for analytics and chatbot integrations.",
-      "Collaborated with QA/support to resolve production issues and ensure uptime.",
+      "Developed and scaled the Artha Job Portal, a multi-tenant SaaS platform for employers and job seekers.",
+      "Built dynamic domain configuration with automated SSL setup for seamless client onboarding.",
+      "Implemented bulk upload and XML import features, significantly reducing manual data entry efforts.",
+      "Designed an embed script system enabling third-party integrations like chatbots and analytics tools.",
+      "Optimized data pipelines and database queries, improving application performance and load time.",
     ],
   }
 ];
 
 export const education = [
   {
-    degree: "Master of Computer Application",
+    degree: "Master of Computer Applications (MCA)",
     institution: "Chandigarh University, Mohali",
     year: "2024",
     description:
-      "Focused on software architecture, full-stack development, and cloud computing. Developed several real-world projects and gained practical exposure to scalable web applications.",
+      "Specialized in full-stack development and software engineering. Built scalable web applications using modern technologies and gained hands-on experience in system design, APIs, and database management.",
   },
   {
     degree: "Bachelor of Science (Mathematics)",
     institution: "Lalit Narayan Mithila University",
     year: "2020",
     description:
-      "Built a strong foundation in analytical thinking, algorithms, and problem-solving through advanced mathematics and logical reasoning.",
+      "Developed strong analytical and problem-solving skills with a focus on mathematical modeling, logic, and computational thinking, forming a solid foundation for software development.",
   },
 ];

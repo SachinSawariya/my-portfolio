@@ -160,6 +160,9 @@
 
 /* SMALL MOBILE */
 @media screen and (max-width: 480px) {
+    .footer {
+        padding: 0 !important;
+    }
     .f-content {
         padding: 2.5rem 1rem 1.5rem;
     }

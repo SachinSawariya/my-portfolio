@@ -10,16 +10,13 @@ function Services() {
       <div className="s-left">
         <h1>My <span>Services</span></h1>
         <p>
-          I deliver high-performance, scalable web solutions by bridging the gap between 
-          stunning design and robust back-end architecture.
+          Build scalable, high-performance web applications by combining intuitive UI with robust backend architecture.
         </p>
         <p>
-          Specializing in the <strong>MERN stack</strong> and modern frameworks like <strong>Next.js</strong>, 
-          I build responsive UIs that are as functional as they are beautiful.
+          Develop fast, responsive, and SEO-friendly solutions using the MERN stack and Next.js that deliver real business value.
         </p>
         <p>
-          From seamless API integrations to secure cloud deployments and database optimization, 
-          I ensure every digital product is built for speed, security, and impact.
+          Deliver end-to-end solutions including APIs, integrations, database optimization, and secure deployments focused on performance and scalability.
         </p>
         <a href={Resume} download>
           <button className="button s-btn">Download CV</button>
@@ -32,12 +29,12 @@ function Services() {
           <Card
             emoji={Glasses}
             heading={"Front-End Technologies"}
-            detail={"Html, CSS, React Js, Tailwind CSS, Bootstrap"}
+            detail={"Html, CSS, Next Js, React Js, Angular, Tailwind, Bootstrap"}
           />
         </div>
 
         {/* Second cards */}
-        <div style={{ left: "0rem", top: "13rem" }}>
+        <div style={{ left: "0rem", top: "15rem" }}>
           <Card
             emoji={Glasses}
             heading={"Programming Language"}
@@ -46,15 +43,15 @@ function Services() {
         </div>
 
         {/* third card */}
-        <div style={{ left: "28rem", top: "13rem" }}>
+        <div style={{ left: "30rem", top: "15rem" }}>
           <Card
             emoji={Glasses}
             heading={"Additional Skills"}
-            detail={"Git, GitLab, Docker"}
+            detail={"GRPC, Git, GitLab, Docker"}
           />
         </div>
         {/* fourth card */}
-        <div style={{ left: "28rem", top: "-6rem" }}>
+        <div style={{ left: "30rem", top: "-6rem" }}>
           <Card
             emoji={Glasses}
             heading={"Back-End Technologies"}
@@ -63,7 +60,7 @@ function Services() {
         </div>
 
         {/* fifth card */}
-        <div style={{ left: "14rem", top: "3.5rem" }}>
+        <div style={{ left: "15rem", top: "5rem" }}>
           <Card
             emoji={Glasses}
             heading={"Database Management"}

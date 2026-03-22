@@ -163,7 +163,7 @@
 /* MOBILE */
 @media screen and (max-width: 768px) {
     .education {
-        padding: 1.5rem;
+        padding: 0;
         gap: 1.5rem;
     }
     .edu-right {
@@ -197,7 +197,7 @@
 /* SMALL MOBILE */
 @media screen and (max-width: 480px) {
     .education {
-        padding: 1rem;
+        padding: 0;
     }
     .edu-left h1 {
         font-size: 1.6rem;

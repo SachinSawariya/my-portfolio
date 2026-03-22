@@ -26,7 +26,7 @@ function Home() {
           <h1>Hii, I'm <span>Sachin Kumar </span><br />From Mithila.</h1>
           <p>Showcase the ability to collaborate effectively, implement secure coding practices, and continuously adapt and learn in order to deliver high-quality full stack solutions.</p>
         </div>
-        <button className="button i-btn">Hire me</button>
+        <button onClick={() => window.location.href = "mailto:sachinsawariya12@gmail.com"} className="button i-btn">Hire me</button>
         <nav className="i-icon" aria-label="Social Media Links">
           <a href={githubURL} target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
             <img src={Github} alt='GitHub Profile' />
@@ -47,10 +47,10 @@ function Home() {
         <img src={glassesimoji} alt='Decorative glasses emoji' />
 
         <div style={{ top: '78%', left: '25%' }}>
-          <FloatingDiv image={Crown} txt1="Full Stack" txt2="Developer" />
+          <FloatingDiv image={Crown} txt1="MERN Stack" txt2="Developer" />
         </div>
         <div style={{ top: '6rem', left: '25%' }}>
-          <FloatingDiv image={Crown} txt1="Programmer" />
+          <FloatingDiv image={Crown} txt1="AI Enthusiast" />
         </div>
       </div>
     </section>

@@ -27,8 +27,8 @@
 .project-card {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 24px;
+  border: 2px solid var(--orangeCard);
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--boxShadow);
   transition: all 0.4s ease;
@@ -155,7 +155,7 @@
 /* SMALL MOBILE */
 @media screen and (max-width: 480px) {
   .portfolio {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
   }
   .portfolio > span {
     font-size: 2rem;

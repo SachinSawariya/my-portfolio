@@ -65,6 +65,11 @@
     font-weight: 700;
 }
 
+.about-content strong {
+    color: var(--black);
+    font-weight: 600;
+}
+
 /* ---- TABLET (≤ 1024px) ---- */
 @media screen and (max-width: 1024px) {
     .about {
