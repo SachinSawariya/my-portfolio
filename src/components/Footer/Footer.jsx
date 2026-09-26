@@ -1,12 +1,6 @@
 import React from 'react'
 import './Footer.css';
-// import { Link } from 'react-router-dom';
-import wave from '../../img/wave.png';
-
-import Insta from '@iconscout/react-unicons/icons/uil-instagram'
-import Facebook from '@iconscout/react-unicons/icons/uil-facebook'
-import Github from '@iconscout/react-unicons/icons/uil-github'
-import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
+import { UilInstagram, UilFacebook, UilGithub, UilLinkedin, UilGlobe } from '@iconscout/react-unicons'
 
 function Footer() {
 
@@ -14,45 +8,46 @@ function Footer() {
     const facebookURL = 'https://www.facebook.com/sachinkumar.kumar.378537';
     const githubURL = 'https://github.com/SachinSawariya';
     const linkedinURL = 'https://www.linkedin.com/in/sachin-kumar-a91a62223/';
+    const websiteURL = 'https://gyanvora.vercel.app/'; // Gyanvora website link
+
     return (
-        <div className="footer">
-            <img src={wave} alt='Decorative wave' className="f-wave" />
-            <div className="f-content">
-                <div className="f-main">
-                    <div className='f-col f-contact'>
-                        <h1>Contact <span>Us</span></h1>
-                        <div className="f-contact-details">
-                            <span><strong>Email:</strong> Sachinsawariya12@gmail.com</span>
-                            <span><strong>Phone:</strong> +91 8434275032</span>
-                        </div>
+        <footer className="footer-section">
+            <div className="footer-container">
+                <div className="footer-content">
+                    <div className="footer-brand">
+                        <h2 className="footer-logo">Sachin <span>Kumar.</span></h2>
+                        <p className="footer-tagline">
+                            Full Stack MERN Developer crafting premium, scalable, and beautifully designed web experiences.
+                        </p>
                     </div>
 
-                    <div className='f-col f-socials'>
-                        <h2>Follow <span>Us</span></h2>
-                        <div className="f-icons">
-                            <a href={instagramURL} target="_blank" rel="noopener noreferrer" className="icon-wrapper">
-                                <Insta size='2rem' />
+                    <div className="footer-links">
+                        <h3 className="footer-title">Connect with me</h3>
+                        <div className="footer-social-icons">
+                            <a href={instagramURL} target="_blank" rel="noopener noreferrer" className="f-icon" aria-label="Instagram">
+                                <UilInstagram size="22" />
                             </a>
-                            <a href={facebookURL} target="_blank" rel="noopener noreferrer" className="icon-wrapper">
-                                <Facebook size='2rem' />
+                            <a href={facebookURL} target="_blank" rel="noopener noreferrer" className="f-icon" aria-label="Facebook">
+                                <UilFacebook size="22" />
                             </a>
-                            <a href={githubURL} target="_blank" rel="noopener noreferrer" className="icon-wrapper">
-                                <Github size='2rem' />
+                            <a href={githubURL} target="_blank" rel="noopener noreferrer" className="f-icon" aria-label="GitHub">
+                                <UilGithub size="22" />
                             </a>
-                            <a href={linkedinURL} target="_blank" rel="noopener noreferrer" className="icon-wrapper">
-                                <Linkedin size='2rem' />
+                            <a href={linkedinURL} target="_blank" rel="noopener noreferrer" className="f-icon" aria-label="LinkedIn">
+                                <UilLinkedin size="22" />
+                            </a>
+                            <a href={websiteURL} target="_blank" rel="noopener noreferrer" className="f-icon website-icon" aria-label="Website">
+                                <UilGlobe size="22" />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div className="f-bottom-bar">
-                    <div className="f-copy">
-                        <span>&copy; {new Date().getFullYear()} <strong>Sachin Kumar</strong>. All Rights Reserved.</span>
-                    </div>
+                <div className="footer-bottom">
+                    <p>&copy; {new Date().getFullYear()} <strong>Sachin Kumar</strong>. All Rights Reserved.</p>
                 </div>
             </div>
-        </div >
+        </footer>
     )
 }
 

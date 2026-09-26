@@ -1,16 +1,16 @@
-import portfolio from "../../img/portfolio.png";
 import skTelecom from "../../img/skTelecom.png";
 import exploreEase from "../../img/explore-ease.png";
+import gyanvora from "../../img/gyanvora-app.png";
 
 export const projectData = [
-    {
-        id: 1,
-        title: 'My Portfolio page',
-        description: `A responsive personal portfolio website built using React.js. It showcases my projects, skills, and experiences in a clean, modern layout. The site uses React Router for navigation, modular components for scalability, and is fully optimized for mobile devices.`,
-        imgUrl: portfolio,
-        link: 'https://sachinsawariya.netlify.app/',
-        tags: ["React", "CSS", "Framer Motion"]
-    },
+{
+    id: 1,
+    title: 'GyanVora: AI & Technology Blog',
+    description: `A modern AI and technology blog platform built with MERN Stack and Next.js. GyanVora publishes practical, search-focused articles on AI, developer tools, and emerging technologies, with a responsive UI, dynamic content management, SEO optimization, and category-based navigation.`,
+    imgUrl: gyanvora,
+    link: 'https://gyanvora.vercel.app/',
+    tags: ["MERN STACK", "NextJS", "Typescript", "Tailwind CSS"]
+},
     {
         id: 2,
         title: 'ExploreEase: Effortless Travel and Accommodation',
