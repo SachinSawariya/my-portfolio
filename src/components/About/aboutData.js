@@ -3,6 +3,7 @@ export const experiences = [
     role: "Software Engineer",
     company: "Codinova Technologies",
     duration: "Jul 2025 – Present",
+    project: "Polymath Network, ServdYou Job Portal, Zenegy Time",
     points: [
       "Engineered scalable MERN stack applications handling real-world production workloads.",
       "Designed and developed an admin analytics dashboard for real-time tracking of user activity and performance.",
@@ -15,6 +16,7 @@ export const experiences = [
     role: "MERN Stack Developer",
     company: "Knovator Technology Pvt Ltd",
     duration: "Jul 2024 – Jul 2025",
+    project: "Artha Job Portal",
     points: [
       "Developed and scaled the Artha Job Portal, a multi-tenant SaaS platform for employers and job seekers.",
       "Built dynamic domain configuration with automated SSL setup for seamless client onboarding.",

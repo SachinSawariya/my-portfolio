@@ -1,120 +1,154 @@
-.experience {
-    padding: 2rem 5rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-    margin-top: 2rem;
-    background: transparent;
+/* Experience.css */
+.experience-section {
+    padding: 6rem 5%;
+    background: #ffffff;
 }
 
-.exp-left {
-    flex: 0.8;
+.exp-container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.exp-heading-wrapper {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.section-title .highlight {
+    color: #ff004f;
+}
+
+.exp-content {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
     align-items: flex-start;
 }
 
-.exp-logo img {
-    width: 250px;
-    height: auto;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
-    animation: float 3s ease-in-out infinite;
-}
-
-.exp-left h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--black);
-    line-height: 1.1;
-}
-
-.exp-left span {
-    color: var(--orange);
-}
-
-.exp-right {
-    flex: 2;
+/* Tabs */
+.exp-tab-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    border-left: 2px solid #e2e8f0;
+    width: 250px;
+    flex-shrink: 0;
 }
 
-.exp-tabs {
-    display: flex;
-    gap: 1rem;
-    border-bottom: 2px solid #f1f1f1;
-    padding-bottom: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.exp-tab {
+.exp-tab-btn {
+    padding: 1rem 1.5rem;
+    text-align: left;
     background: transparent;
     border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--gray);
+    border-left: 2px solid transparent;
+    margin-left: -2px;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #64748b;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding: 0.4rem 0;
-    position: relative;
-    white-space: nowrap;
+    line-height: 1.4;
 }
 
-.exp-tab:hover {
-    color: var(--black);
+.exp-tab-btn:hover {
+    color: #ff004f;
+    background: rgba(255, 0, 79, 0.05);
 }
 
-.exp-tab.active {
-    color: var(--orange);
+.exp-tab-btn.active {
+    color: #ff004f;
+    font-weight: 700;
+    border-left-color: #ff004f;
+    background: rgba(255, 0, 79, 0.05);
 }
 
-.exp-tab.active::after {
-    content: '';
-    position: absolute;
-    bottom: -0.6rem;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: var(--orange);
+/* Panels */
+.exp-panels {
+    flex: 1;
 }
 
-.active-exp-card {
-    background: white;
-    border: 3px solid var(--orangeCard);
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: var(--boxShadow);
+.exp-panel {
+    display: none;
     animation: fadeIn 0.5s ease;
 }
 
-.exp-card-header {
+.exp-panel.active {
+    display: block;
+}
+
+.exp-role {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+}
+
+.exp-company-name {
+    color: #ff004f;
+}
+
+.exp-duration {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.exp-projects {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
     margin-bottom: 1.5rem;
 }
 
-.exp-card-header h2 {
-    font-size: 1.8rem;
-    color: var(--black);
-    font-weight: 700;
+.exp-projects strong {
+    color: #111;
+    font-size: 1rem;
 }
 
-.exp-company {
-    font-size: 1.3rem;
-    color: brown;
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tag {
+    font-size: 0.85rem;
+    color: #ff004f;
+    background: rgba(255, 0, 79, 0.08);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
     font-weight: 600;
 }
 
-.exp-points {
-    list-style: disc;
-    padding-left: 1.5rem;
-    color: var(--black);
-    font-size: 1.05rem;
-    line-height: 1.8;
+.exp-duties {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.exp-points li {
-    margin-bottom: 0.8rem;
+.exp-duties li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #334155;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.exp-duties li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #ff004f;
+    font-size: 1.2rem;
+    top: 2px;
 }
 
 @keyframes fadeIn {
@@ -122,92 +156,48 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* TABLET */
-@media screen and (max-width: 1024px) {
-    .experience {
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .exp-content {
         flex-direction: column;
-        padding: 2rem 3rem;
         gap: 2rem;
     }
-    .exp-left {
-        align-items: center;
-        text-align: center;
-    }
-    .exp-left h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .exp-logo img {
-        width: 200px;
-    }
-    .active-exp-card {
-        padding: 1.5rem;
-    }
-    .exp-card-header h2 {
-        font-size: 1.5rem;
-    }
-}
 
-/* MOBILE */
-@media screen and (max-width: 768px) {
-    .experience {
-        padding: 0;
-        gap: 1.5rem;
-    }
-    .exp-right {
+    .exp-tab-list {
+        flex-direction: row;
         width: 100%;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        border-left: none;
+        border-bottom: 2px solid #e2e8f0;
     }
-    .active-exp-card {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 1.25rem;
-    }
-    .exp-left h1 {
-        font-size: 1.8rem;
-    }
-    .exp-logo img {
-        width: 160px;
-    }
-    .exp-tab {
-        font-size: 0.85rem;
-    }
-    .exp-card-header h2 {
-        font-size: 1.2rem;
-    }
-    .exp-company {
-        font-size: 1rem;
-    }
-    .exp-points {
-        font-size: 0.9rem;
-    }
-    .exp-points li {
-        margin-bottom: 0.5rem;
-    }
-}
 
-/* SMALL MOBILE */
-@media screen and (max-width: 480px) {
-    .experience {
-        padding: 0;
+    .exp-tab-list::-webkit-scrollbar {
+        display: none;
     }
-    .exp-left h1 {
-        font-size: 1.6rem;
+
+    .exp-tab-btn {
+        padding: 1rem 1.5rem;
+        text-align: center;
+        white-space: nowrap;
+        border-left: none;
+        margin-left: 0;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -2px;
+        border-radius: 8px 8px 0 0;
     }
-    .exp-tabs {
-        gap: 0.5rem;
+    
+    .exp-tab-btn.active {
+        border-left: none;
+        border-bottom-color: #ff004f;
     }
-    .active-exp-card {
-        width: 100%;
-        box-sizing: border-box;
+    
+    .section-title {
+        font-size: 2.2rem;
     }
-    .exp-card-header h2 {
-        font-size: 1rem;
-    }
-    .exp-company {
-        font-size: 0.9rem;
-    }
-    .exp-points {
-        font-size: 0.85rem;
-        padding-left: 1rem;
+    
+    .exp-role {
+        font-size: 1.4rem;
     }
 }

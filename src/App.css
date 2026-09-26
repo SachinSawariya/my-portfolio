@@ -10,6 +10,12 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body, button, input, textarea, p, span, div, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
 .App {
   /* padding: 0.5rem 3.5rem; */
   overflow: hidden;
@@ -38,9 +44,17 @@
   border: 1px solid var(--orange);
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%; /* Reduces all rem-based sizes */
+  }
+}
+
 @media screen and (max-width: 480px) {
+  html {
+    font-size: 90%; /* Further reduction for small mobile */
+  }
   .App {
     padding: 0.5rem 1rem;
   }
-
 }
