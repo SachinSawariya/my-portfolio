@@ -28,7 +28,7 @@ function Navbar() {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="nav-container">
                 <div className="nav-logo">
-                    <Link spy={true} to='home' smooth={true} onClick={() => setMenuOpen(false)} className="logo-link">
+                    <Link spy={true} to='home' href="#home" smooth={true} onClick={() => setMenuOpen(false)} className="logo-link">
                         <svg className="logo-icon" viewBox="0 0 24 24" fill="#ff004f" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 4.3L19.5 8.6L12 12.9L4.5 8.6L12 4.3ZM4.5 15.4V10.3L11 14V20.2L4.5 15.4ZM13 20.2V14L19.5 10.3V15.4L13 20.2Z"/>
                         </svg>
@@ -38,16 +38,16 @@ function Navbar() {
                 
                 <div className={`nav-menu ${menuOpen ? 'active' : ''}`}>
                     <ul className="nav-list">
-                        <li><Link spy={true} to='home' smooth={true} activeClass="active" onClick={toggleMenu}>Home</Link></li>
-                        <li><Link spy={true} to='About' smooth={true} activeClass="active" onClick={toggleMenu}>About</Link></li>
-                        <li><Link spy={true} to='Experience' smooth={true} activeClass="active" onClick={toggleMenu}>Experience</Link></li>
-                        <li><Link spy={true} to='Services' smooth={true} activeClass="active" onClick={toggleMenu}>Services</Link></li>
-                        <li><Link spy={true} to='Projects' smooth={true} activeClass="active" onClick={toggleMenu}>Projects</Link></li>
+                        <li><Link spy={true} to='home' href="#home" smooth={true} activeClass="active" onClick={toggleMenu}>Home</Link></li>
+                        <li><Link spy={true} to='About' href="#About" smooth={true} activeClass="active" onClick={toggleMenu}>About</Link></li>
+                        <li><Link spy={true} to='Experience' href="#Experience" smooth={true} activeClass="active" onClick={toggleMenu}>Experience</Link></li>
+                        <li><Link spy={true} to='Services' href="#Services" smooth={true} activeClass="active" onClick={toggleMenu}>Services</Link></li>
+                        <li><Link spy={true} to='Projects' href="#Projects" smooth={true} activeClass="active" onClick={toggleMenu}>Projects</Link></li>
                     </ul>
-                    <Link spy={true} to='Contacts' smooth={true} className="nav-cta" onClick={() => setMenuOpen(false)} style={{ cursor: 'pointer' }}>Contact Us</Link>
+                    <Link spy={true} to='Contacts' href="#Contacts" smooth={true} className="nav-cta" onClick={() => setMenuOpen(false)} style={{ cursor: 'pointer' }}>Contact Us</Link>
                 </div>
 
-                <div className="hamburger" onClick={toggleMenu}>
+                <div className="hamburger" onClick={toggleMenu} role="button" aria-label="Toggle navigation menu" tabIndex="0">
                     <span className={`bar ${menuOpen ? 'active' : ''}`}></span>
                     <span className={`bar ${menuOpen ? 'active' : ''}`}></span>
                     <span className={`bar ${menuOpen ? 'active' : ''}`}></span>

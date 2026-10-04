@@ -10,7 +10,7 @@ function About() {
         <div className="about-left">
           <div className="image-wrapper">
             <div className="image-bg-blob"></div>
-            <img src={my_pic} alt="Sachin Kumar" className="about-img" />
+            <img src={my_pic} alt="Sachin Kumar" className="about-img" loading="lazy" decoding="async" />
             <div className="experience-badge">
               <span className="exp-number">2+</span>
               <span className="exp-text">Years of<br/>Experience</span>

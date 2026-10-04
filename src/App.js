@@ -49,7 +49,9 @@ function App() {
         >
           <Toaster position="top-right" />
           <Navbar setCurrentSection={setCurrentSection} />
-          <Home setCurrentSection={setCurrentSection} />
+          
+          <main>
+            <Home setCurrentSection={setCurrentSection} />
 
           <Suspense fallback={<SectionLoader />}>
             <About setCurrentSection={setCurrentSection} />
@@ -78,6 +80,7 @@ function App() {
           <Suspense fallback={<SectionLoader />}>
             <Contact setCurrentSection={setCurrentSection} />
           </Suspense>
+          </main>
 
           <Suspense fallback={<div style={{ height: '25rem' }} />}>
             <Footer />

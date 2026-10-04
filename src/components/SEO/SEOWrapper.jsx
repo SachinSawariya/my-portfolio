@@ -4,44 +4,44 @@ import SEOHead from './SEOHead';
 const SEOWrapper = ({ children, section }) => {
   const seoData = {
     home: {
-      title: "Sachin Kumar - Full Stack MERN Developer | Home",
-      description: "Welcome to my portfolio! I'm Sachin Kumar, a Full Stack MERN Developer specializing in React, Node.js, and scalable web applications.",
-      keywords: "Sachin Kumar, full stack developer, MERN stack, React developer, Node.js developer, home, portfolio",
+      title: "Sachin Kumar | Expert Full Stack MERN Developer",
+      description: "Welcome to the portfolio of Sachin Kumar, a passionate Full Stack MERN Developer specializing in React.js, Node.js, Next.js, and building scalable web applications.",
+      keywords: "Sachin Kumar, hire full stack developer, MERN stack developer, React.js developer, Node.js expert, software engineer portfolio, India",
       canonicalUrl: "https://sachinsawariya.netlify.app/",
       ogImage: "https://sachinsawariya.netlify.app/images/sachin-kumar-home.jpg"
     },
     about: {
-      title: "About Sachin Kumar - Full Stack MERN Developer",
-      description: "Learn more about Sachin Kumar, an experienced Full Stack MERN Developer with expertise in React, Node.js, MongoDB, and building scalable web applications.",
-      keywords: "Sachin Kumar, about, full stack developer, MERN stack, React developer, Node.js developer, experience, education",
+      title: "About Sachin Kumar | React & Node.js Developer",
+      description: "Learn more about Sachin Kumar, an experienced Full Stack Software Engineer bridging the gap between pixel-perfect front-end design and robust backend architecture.",
+      keywords: "about Sachin Kumar, React developer background, software engineer experience, MERN stack skills, frontend and backend developer",
       canonicalUrl: "https://sachinsawariya.netlify.app/#About",
       ogImage: "https://sachinsawariya.netlify.app/images/sachin-kumar-about.jpg"
     },
     services: {
-      title: "Services - Sachin Kumar | Full Stack Development",
-      description: "Professional full stack development services by Sachin Kumar. Specializing in MERN stack, React, Node.js, web applications, and API development.",
-      keywords: "Sachin Kumar, services, full stack development, MERN stack, React development, Node.js development, web development, API development",
+      title: "Freelance Web Development Services | Sachin Kumar",
+      description: "Hire Sachin Kumar for professional full stack web development. Expert in MERN stack, React, Next.js, Node.js, API development, and custom SaaS solutions.",
+      keywords: "freelance web developer, MERN stack services, custom web applications, SaaS development, API creation, hire React developer",
       canonicalUrl: "https://sachinsawariya.netlify.app/#Services",
       ogImage: "https://sachinsawariya.netlify.app/images/sachin-kumar-services.jpg"
     },
     projects: {
-      title: "Projects - Sachin Kumar | Full Stack Developer Portfolio",
-      description: "Explore projects by Sachin Kumar, including MERN stack applications, job boards, SaaS platforms, and other web development work.",
-      keywords: "Sachin Kumar, projects, portfolio, MERN stack, React projects, Node.js projects, web applications, job board, SaaS",
+      title: "MERN Stack Projects Portfolio | Sachin Kumar",
+      description: "Explore the web development portfolio of Sachin Kumar. View featured projects including scalable SaaS platforms, job boards, and modern React applications.",
+      keywords: "MERN stack projects, React portfolio, full stack web apps, Next.js projects, Node.js backend examples, software development work",
       canonicalUrl: "https://sachinsawariya.netlify.app/#Projects",
       ogImage: "https://sachinsawariya.netlify.app/images/sachin-kumar-projects.jpg"
     },
     testimonials: {
-      title: "Testimonials - Sachin Kumar | Client Reviews",
-      description: "Read client testimonials and reviews about Sachin Kumar's work as a Full Stack MERN Developer and software engineer.",
-      keywords: "Sachin Kumar, testimonials, reviews, client feedback, full stack developer, MERN stack developer, recommendations",
+      title: "Client Testimonials & Reviews | Sachin Kumar",
+      description: "Read what clients have to say about working with Sachin Kumar. A proven track record of delivering high-quality Full Stack MERN development services.",
+      keywords: "Sachin Kumar reviews, freelance developer testimonials, client feedback, reliable web developer, software engineering recommendations",
       canonicalUrl: "https://sachinsawariya.netlify.app/#Testimonials",
       ogImage: "https://sachinsawariya.netlify.app/images/sachin-kumar-testimonials.jpg"
     },
     contact: {
-      title: "Contact Sachin Kumar - Full Stack MERN Developer",
-      description: "Get in touch with Sachin Kumar, Full Stack MERN Developer. Available for freelance projects, collaborations, and job opportunities.",
-      keywords: "Sachin Kumar, contact, hire, freelance, collaboration, full stack developer, MERN stack, React developer, Node.js developer",
+      title: "Contact Sachin Kumar | Hire a Full Stack Developer",
+      description: "Looking for a Full Stack MERN Developer? Get in touch with Sachin Kumar for freelance projects, technical collaborations, and software engineering opportunities.",
+      keywords: "contact Sachin Kumar, hire MERN developer, freelance React developer, web development inquiry, software engineer contact",
       canonicalUrl: "https://sachinsawariya.netlify.app/#Contacts",
       ogImage: "https://sachinsawariya.netlify.app/images/sachin-kumar-contact.jpg"
     }
