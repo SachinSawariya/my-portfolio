@@ -1,13 +1,42 @@
 :root {
   --yellow: #F5C32C;
-  --orange: #FCA61F;
+  --orange: #ff004f;
   --black: #242D49;
   --gray: #788097;
   --blueCard: #DDF8FE;
   --purple: rgb(238 210 255);
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --orangeCard: rgba(252, 166, 31, 0.45);
+  --orangeCard: rgba(255, 0, 79, 0.45);
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+
+  /* New Theme Variables */
+  --bg-color: #ffffff;
+  --bg-alt: #fafafa;
+  --bg-input: #f8fafc;
+  --bg-nav: rgba(255, 255, 255, 0.9);
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-muted: #777777;
+  --border-color: #e1e5ee;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.04);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-nav: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode {
+  --bg-color: #0f172a;
+  --bg-alt: #1e293b;
+  --bg-input: #0f172a;
+  --bg-nav: rgba(15, 23, 42, 0.9);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --card-bg: #1e293b;
+  --card-border: rgba(255, 255, 255, 0.05);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --shadow-nav: rgba(0, 0, 0, 0.2);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -19,7 +48,9 @@ body, button, input, textarea, p, span, div, h1, h2, h3, h4, h5, h6 {
 .App {
   /* padding: 0.5rem 3.5rem; */
   overflow: hidden;
-  color: var(--black);
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button {

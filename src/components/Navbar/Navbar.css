@@ -11,7 +11,7 @@
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--bg-nav);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
@@ -50,7 +50,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 800;
-    color: #111;
+    color: var(--text-primary);
     letter-spacing: 2px;
     text-transform: uppercase;
     display: flex;
@@ -75,7 +75,7 @@
 .nav-list li a {
     font-size: 1rem;
     font-weight: 500;
-    color: #333;
+    color: var(--text-primary);
     cursor: pointer;
     position: relative;
     transition: color 0.3s ease;
@@ -107,19 +107,19 @@
 /* CTA Button */
 .nav-cta {
     padding: 0.7rem 1.8rem;
-    background: #111;
-    color: white;
+    background: var(--text-primary);
+    color: var(--bg-color);
     border-radius: 30px;
     font-weight: 600;
     font-size: 0.95rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 2px solid #111;
+    border: 2px solid var(--text-primary);
 }
 
 .nav-cta:hover {
     background: transparent;
-    color: #111;
+    color: var(--text-primary);
 }
 
 /* Hamburger Menu */
@@ -134,7 +134,7 @@
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #111;
+    background-color: var(--text-primary);
     border-radius: 3px;
     transition: all 0.3s ease;
 }
@@ -169,7 +169,7 @@
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.98);
+        background: var(--bg-nav);
         flex-direction: column;
         justify-content: center;
         align-items: center;

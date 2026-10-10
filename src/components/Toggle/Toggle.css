@@ -17,6 +17,7 @@
     border-radius: 100%;
     background: var(--orange);
     position: absolute;
+    transition: all 0.3s ease;
 }
 
 

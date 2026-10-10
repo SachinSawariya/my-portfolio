@@ -1,7 +1,7 @@
 /* Experience.css */
 .experience-section {
     padding: 6rem 5%;
-    background: #ffffff;
+    background: var(--bg-card);
 }
 
 .exp-container {
@@ -17,7 +17,7 @@
 .section-title {
     font-size: 3rem;
     font-weight: 800;
-    color: #111;
+    color: var(--text-primary);
 }
 
 .section-title .highlight {
@@ -34,7 +34,7 @@
 .exp-tab-list {
     display: flex;
     flex-direction: column;
-    border-left: 2px solid #e2e8f0;
+    border-left: 2px solid var(--border-color);
     width: 250px;
     flex-shrink: 0;
 }
@@ -49,7 +49,7 @@
     border-radius: 0 8px 8px 0;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #64748b;
+    color: var(--text-secondary);
     cursor: pointer;
     transition: all 0.3s ease;
     line-height: 1.4;
@@ -84,7 +84,7 @@
 .exp-role {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #111;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
@@ -94,7 +94,7 @@
 
 .exp-duration {
     font-size: 0.95rem;
-    color: #64748b;
+    color: var(--text-secondary);
     margin-bottom: 0.5rem;
     letter-spacing: 0.5px;
 }
@@ -108,7 +108,7 @@
 }
 
 .exp-projects strong {
-    color: #111;
+    color: var(--text-primary);
     font-size: 1rem;
 }
 
@@ -137,7 +137,7 @@
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 1rem;
-    color: #334155;
+    color: var(--text-secondary);
     font-size: 1.05rem;
     line-height: 1.7;
 }
@@ -170,7 +170,7 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
         border-left: none;
-        border-bottom: 2px solid #e2e8f0;
+        border-bottom: 2px solid var(--border-color);
     }
 
     .exp-tab-list::-webkit-scrollbar {

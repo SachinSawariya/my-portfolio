@@ -1,7 +1,7 @@
 /* Project.css */
 .projects-section {
     padding: 6rem 5%;
-    background: #ffffff;
+    background: var(--bg-card);
 }
 
 .projects-container {
@@ -31,7 +31,7 @@
 .section-title {
     font-size: 3rem;
     font-weight: 800;
-    color: #111;
+    color: var(--text-primary);
     line-height: 1.1;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .projects-desc {
-    color: #555;
+    color: var(--text-secondary);
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.2rem;
@@ -76,7 +76,7 @@
 .swiper-button-next,
 .swiper-button-prev {
     color: #ff004f !important;
-    background: #ffffff;
+    background: var(--bg-card);
     width: 40px !important;
     height: 40px !important;
     border-radius: 50%;
@@ -106,7 +106,7 @@
 
 .project-card {
     height: 100%; /* Ensures all cards stretch to equal height in swiper */
-    background: #ffffff;
+    background: var(--bg-card);
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
@@ -217,12 +217,12 @@
 .project-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #111;
+    color: var(--text-primary);
 }
 
 .project-description {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.5;
     margin-bottom: 0.5rem;
     display: -webkit-box;

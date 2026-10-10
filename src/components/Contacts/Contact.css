@@ -1,7 +1,7 @@
 /* Contact.css */
 .contact-section {
     padding: 6rem 5%;
-    background: #ffffff;
+    background: var(--bg-card);
     position: relative;
     overflow: hidden;
 }
@@ -33,7 +33,7 @@
 .section-title {
     font-size: 3rem;
     font-weight: 800;
-    color: #111;
+    color: var(--text-primary);
     line-height: 1.1;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .contact-desc {
-    color: #555;
+    color: var(--text-secondary);
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 2.5rem;
@@ -81,7 +81,7 @@
 .info-item span {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
 }
 
 /* RIGHT SIDE (Form Card) */
@@ -93,7 +93,7 @@
 }
 
 .contact-form-card {
-    background: #ffffff;
+    background: var(--bg-card);
     border-radius: 1.2rem;
     padding: 3rem;
     width: 100%;
@@ -105,7 +105,7 @@
 .form-title {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #111;
+    color: var(--text-primary);
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -124,11 +124,11 @@
 .user-input {
     width: 100%;
     padding: 1rem 1.2rem;
-    border: 1px solid #e1e5ee;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     font-size: 1rem;
-    color: #333;
-    background: #f8fafc;
+    color: var(--text-primary);
+    background: var(--bg-input);
     transition: all 0.3s ease;
     box-sizing: border-box;
 }
@@ -136,7 +136,7 @@
 .user-input:focus {
     outline: none;
     border-color: #ff004f;
-    background: #ffffff;
+    background: var(--bg-card);
     box-shadow: 0 0 0 4px rgba(255, 0, 79, 0.1);
 }
 

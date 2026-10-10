@@ -1,7 +1,7 @@
 /* Testimonial.css */
 .testimonials-section {
     padding: 6rem 5%;
-    background: #ffffff;
+    background: var(--bg-card);
     position: relative;
     overflow: hidden;
 }
@@ -33,7 +33,7 @@
 .section-title {
     font-size: 3rem;
     font-weight: 800;
-    color: #111;
+    color: var(--text-primary);
     line-height: 1.1;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .testimonials-desc {
-    color: #555;
+    color: var(--text-secondary);
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.2rem;
@@ -70,7 +70,7 @@
 
 /* Card Styling */
 .testimonial-card {
-    background: #ffffff;
+    background: var(--bg-card);
     border-radius: 1.2rem;
     padding: 3.5rem 2.5rem;
     display: flex;
@@ -113,7 +113,7 @@
 .t-review {
     font-size: 1.05rem;
     font-style: italic;
-    color: #444;
+    color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 2rem;
     flex-grow: 1;
@@ -127,7 +127,7 @@
 .t-name {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #111;
+    color: var(--text-primary);
 }
 
 .t-role {
@@ -138,7 +138,7 @@
 
 /* Swiper Nav/Pagination */
 .swiper-pagination-bullet {
-    background: #ccc !important;
+    background: var(--text-muted) !important;
     opacity: 0.5 !important;
 }
 
@@ -150,7 +150,7 @@
 .swiper-button-next,
 .swiper-button-prev {
     color: #ff004f !important;
-    background: #ffffff;
+    background: var(--bg-card);
     width: 40px !important;
     height: 40px !important;
     border-radius: 50%;
@@ -174,7 +174,7 @@
 .swiper-button-prev { left: 0 !important; }
 
 /* Blur Effect */
-.blur1 {
+/* .blur1 {
     position: absolute;
     width: 30rem;
     height: 20rem;
@@ -186,7 +186,7 @@
     transform: translate(-50%, -50%);
     filter: blur(80px);
     opacity: 0.5;
-}
+} */
 
 /* RESPONSIVE */
 @media screen and (max-width: 1024px) {

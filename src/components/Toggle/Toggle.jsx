@@ -21,7 +21,7 @@ function Toggle() {
         <Moon/>
         <div className="t-button"
          
-          style = {darkMode? {left: '2px'} : {right : '2px'}}
+          style={darkMode ? {right: '2px', left: 'auto'} : {left: '2px', right: 'auto'}}
           >  
         </div>
 

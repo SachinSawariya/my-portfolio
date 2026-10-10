@@ -40,13 +40,7 @@ function App() {
   return (
     <Suspense fallback={<SectionLoader />}>
       <SEOWrapper section={currentSection}>
-        <div
-          className="App"
-          style={{
-            background: darkMode ? 'black' : '',
-            color: darkMode ? 'white' : '',
-          }}
-        >
+        <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
           <Toaster position="top-right" />
           <Navbar setCurrentSection={setCurrentSection} />
           

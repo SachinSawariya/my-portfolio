@@ -1,7 +1,7 @@
 /* services.css */
 .skills-section {
     padding: 6rem 5%;
-    background: #fafafa;
+    background: var(--bg-alt);
 }
 
 .skills-container {
@@ -29,7 +29,7 @@
 .section-title {
     font-size: 3rem;
     font-weight: 800;
-    color: #111;
+    color: var(--text-primary);
     line-height: 1.1;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .skills-desc {
-    color: #555;
+    color: var(--text-secondary);
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.2rem;
@@ -75,7 +75,7 @@
 }
 
 .skill-card-modern {
-    background: #ffffff;
+    background: var(--bg-card);
     border-radius: 1rem;
     padding: 0.7rem 1.5rem 1.5rem 1.5rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
@@ -98,7 +98,7 @@
     align-items: center;
     font-size: 1.3rem;
     font-weight: 700;
-    color: #111;
+    color: var(--text-primary);
     margin-bottom: 1.2rem;
 }
 
@@ -122,6 +122,12 @@
 .skill-tag:hover {
     background: #ff004f;
     color: white;
+}
+
+.dark-mode .skill-tag {
+    background: rgba(255, 0, 79, 0.15);
+    border: 1px solid rgba(255, 0, 79, 0.25);
+    color: #ff80a7; /* lighter pink for better contrast on dark bg */
 }
 
 /* RESPONSIVE */

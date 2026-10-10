@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
+import Toggle from '../Toggle/Toggle';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -44,6 +45,7 @@ function Navbar() {
                         <li><Link spy={true} to='Services' href="#Services" smooth={true} activeClass="active" onClick={toggleMenu}>Services</Link></li>
                         <li><Link spy={true} to='Projects' href="#Projects" smooth={true} activeClass="active" onClick={toggleMenu}>Projects</Link></li>
                     </ul>
+                    <Toggle />
                     <Link spy={true} to='Contacts' href="#Contacts" smooth={true} className="nav-cta" onClick={() => setMenuOpen(false)} style={{ cursor: 'pointer' }}>Contact Us</Link>
                 </div>
 
